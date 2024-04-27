@@ -11,7 +11,7 @@ Questo progetto è stato generato con [Angular CLI](https://github.com/angular/a
 
 Esegui `ng serve` per avviare un server di sviluppo. Naviga su `http://localhost:4200/`. L'applicazione si ricaricherà automaticamente se modifichi uno dei file sorgente.
 
-## Scaffolding del codice
+##  Code scaffolding
 
 Esegui `ng generate component nome-componente` per generare un nuovo componente. Puoi anche utilizzare `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
