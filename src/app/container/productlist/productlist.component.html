@@ -1,11 +1,17 @@
-<filter [all]="totalProductCount" [outOfStock]="totalProductOutStock" [inStock]="totalProductInStock"></filter>
-<hr>
+<filter
+  [all]="totalProductCount"
+  [outOfStock]="totalProductOutStock"
+  [inStock]="totalProductInStock"
+(selectFiletrRadioButtonChange)="OnFilterChange($event)">
+</filter>
+<hr />
 <div *ngFor="let prod of products">
   <div class="alert alert-dark" role="alert" *ngIf="prod.discount > 0">
-    Sconti Black Friday {{ prod.discount }}%!
+    Sconti Black Friday {{ prod.discount + "%" }} sui {{ prod.name }}!
   </div>
 </div>
+<div *ngFor="let prod of products">
 <app-singleproducts
-  *ngFor="let prod of products"
   [product]="prod"
-></app-singleproducts>
+ *ngIf="selectFilterRadioButton === 'all' || prod.is_In_inventory.toString() === selectFilterRadioButton"></app-singleproducts>
+</div>

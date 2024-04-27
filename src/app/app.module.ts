@@ -8,6 +8,7 @@ import { RouterOutlet } from '@angular/router';
 import { ProductlistComponent } from './container/productlist/productlist.component';
 import { CommonModule } from '@angular/common';
 import { FilterComponent } from './container/productlist/filter/filter.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { FilterComponent } from './container/productlist/filter/filter.component
     ProductComponent,
     ProductlistComponent,
     FilterComponent,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
