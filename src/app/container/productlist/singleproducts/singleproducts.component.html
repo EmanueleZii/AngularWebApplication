@@ -1,0 +1,53 @@
+<div class="alert alert-dark" role="alert" *ngIf="product.discount > 0">
+  Sconti Black Friday {{ product.discount }}%!
+</div>
+
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card" style="width: 18rem">
+      <img [src]="product.imageUrl" class="card-img-top" />
+      <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <p class="card-text">Price: {{ product.price }} $</p>
+        <p class="card-text">Discount: {{ product.discount }}</p>
+        <p class="card-text">
+          InStock:
+          {{ product.itemLeft }}
+        </p>
+        <p class="card-text in_inventory">
+          Is In Inventory: <br />
+          {{ product.is_In_inventory ? "Is Available" : "Is Not Available" }}
+        </p>
+        <p class="card-text">
+          Color:
+          {{ product.color }}
+        </p>
+        <button class="btn btn-lg btn-primary">Acquista</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6">
+    <div class="card" style="width: 18rem">
+      <img [src]="product.imageUrl" class="card-img-top" />
+      <div class="card-body">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <p class="card-text">Price: {{ product.price }} $</p>
+        <p class="card-text">Discount: {{ product.discount }}</p>
+        <p class="card-text">
+          InStock:
+          {{ product.itemLeft }}
+        </p>
+        <p class="card-text in_inventory">
+          Is In Inventory: <br />
+          {{ product.is_In_inventory ? "Is Available" : "Is Not Available" }}
+        </p>
+        <p class="card-text">
+          Color:
+          {{ product.color }}
+        </p>
+        <button class="btn btn-lg btn-primary">Acquista</button>
+      </div>
+    </div>
+  </div>
+</div>

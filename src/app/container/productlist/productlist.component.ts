@@ -1,12 +1,28 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SingleproductsComponent } from './singleproducts/singleproducts.component';
 
+// Define the Product interface
+interface Product {
+  id: number;
+  name: string;
+  category: string;
+  brand: string;
+  description: string;
+  price: number;
+  discount: number; // Include the discount property
+  imageUrl: string;
+  color: string[];
+  itemLeft: number;
+  is_In_inventory: boolean;
+  slug: string;
+}
 @Component({
   selector: 'productlist',
   standalone: true,
-  imports: [ CommonModule],
+  imports: [ CommonModule, SingleproductsComponent],
   templateUrl: './productlist.component.html',
-  styleUrl: './productlist.component.css'
+  styleUrls: ['./productlist.component.css']
 })
 
 export class ProductlistComponent 
@@ -16,7 +32,7 @@ export class ProductlistComponent
   prezzoscontato: number = parseInt((499.99 / this.sconto * 100).toFixed(0), 10);
 
   // array prodotti
-  product = [
+  products: Product[] = [
   {
     id: 1,
     name: 'Smartphone Apple',
@@ -25,7 +41,7 @@ export class ProductlistComponent
     description: 'A high-quality smartphone with advanced features.',
     price: this.prezzoscontato,
     discount: this.sconto,
-    imageUrl: '/assets/IPhone15.jpg',
+    imageUrl: '/assets/IPhone_15.png',
     color: ['White', 'Black', 'Pink','Blue'],
     itemLeft: 10,
     is_In_inventory: true,
@@ -39,7 +55,7 @@ export class ProductlistComponent
     description: 'A sleek and stylish smartphone for modern users.',
     price: this.prezzoscontato,
     discount: this.sconto,
-    imageUrl: '/assets/IPhone15.jpg',
+    imageUrl: '/assets/IPhone_15.png',
     color: ['White', 'Black', 'Pink','Blue'],
     itemLeft: 5,
     is_In_inventory: true,
@@ -53,7 +69,7 @@ export class ProductlistComponent
     description: 'A sleek and stylish smartphone for modern users.',
     price: this.prezzoscontato,
     discount: this.sconto,
-    imageUrl: '/assets/IPhone15.jpg',
+    imageUrl: '/assets/IPhone_15.png',
     color: ['White', 'Black', 'Pink','Blue'],
     itemLeft: 5,
     is_In_inventory: true,
@@ -67,7 +83,7 @@ export class ProductlistComponent
     description: 'A sleek and stylish smartphone for modern users.',
     price: this.prezzoscontato,
     discount:   this.sconto,
-    imageUrl: '/assets/IPhone15.jpg',
+    imageUrl: '/assets/IPhone_15.png',
     color: ['White', 'Black', 'Pink','Blue'],
     itemLeft: 5,
     is_In_inventory: true,
