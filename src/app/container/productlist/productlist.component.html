@@ -1,2 +1,11 @@
-<app-singleproducts *ngFor="let prod of products"  [product]="prod" ></app-singleproducts>
-
+<filter [all]="totalProductCount" [outOfStock]="totalProductOutStock" [inStock]="totalProductInStock"></filter>
+<hr>
+<div *ngFor="let prod of products">
+  <div class="alert alert-dark" role="alert" *ngIf="prod.discount > 0">
+    Sconti Black Friday {{ prod.discount }}%!
+  </div>
+</div>
+<app-singleproducts
+  *ngFor="let prod of products"
+  [product]="prod"
+></app-singleproducts>

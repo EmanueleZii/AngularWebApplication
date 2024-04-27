@@ -1,8 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-singleproducts',
   standalone: true,
+  imports: [CommonModule],
   templateUrl: './singleproducts.component.html',
   styleUrls: ['./singleproducts.component.css']
  
