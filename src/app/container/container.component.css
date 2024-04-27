@@ -1,0 +1,13 @@
+*{
+
+    text-align: center;
+}
+
+div{
+    border: 1ps solid #333;
+    
+}
+
+.container-fluid{
+    display: flex;
+}

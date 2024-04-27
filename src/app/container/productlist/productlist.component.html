@@ -1,0 +1,173 @@
+
+<div class="container" *ngFor="let item of product; let i= index">
+<!--- SCONTI Disclaimer-->
+  <div class="alert alert-dark" role="alert" *ngIf="item.discount >0">
+  <h3 class="fw-bold">Sconti Black Friday {{item.discount}}%!</h3>
+</div>
+<!--- fine SCONTI Disclaimer-->
+<br>
+<!--- Prodotti-->
+<div class="row">
+  <div class="col-sm-4 mb-3">
+    <div class="card" style="width: 18rem">
+      <div class="card-body">
+        <img [src]="item.imageUrl" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.name  }}</h5>
+          <p class="card-text">Price: {{ item.price  }} $</p>
+          <p class="card-text">Discount: {{ item.discount  }}</p>
+          <p class="card-text">
+            InStock:
+            {{ item.itemLeft}}  
+          </p>
+          <p class="card-text in_inventory">
+           Is In Inventory: <br>
+            {{ item.is_In_inventory ? 'Is Available' :'Is Not Available'}}  
+          </p>
+          <p class="card-text">
+            Color:
+            {{ item.color}}
+          </p>
+          <button class="btn btn-lg btn-primary">Acquista</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  <div class="col-sm-4 mb-3">
+    <div class="card" style="width: 18rem">
+      <div class="card-body">
+        <img [src]="item.imageUrl" class="card-img-top"  />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <p class="card-text">Price: {{ item.price }} $</p>
+          <p class="card-text">Discount: {{ item.discount }}</p>
+          <p class="card-text">
+            InStock:
+            {{
+             item.itemLeft
+            }}
+          </p>
+          <p class="card-text in_inventory">
+            Is In Inventory: <br>
+             {{ item.is_In_inventory ? 'Is Available' :'Is Not Available'}}  
+           </p>
+           <p class="card-text">
+            Color:
+            {{ item.color}}
+          </p>
+          <button class="btn btn-lg btn-primary">Acquista</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 mb-3">
+    <div class="card" style="width: 18rem">
+      <div class="card-body">
+        <img [src]="item.imageUrl" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{ item.name  }}</h5>
+          <p class="card-text">Price: {{ item.price }} $</p>
+          <p class="card-text">Discount: {{ item.discount  }}</p>
+          <p class="card-text">
+            InStock:
+            {{ item.itemLeft}}
+          </p>
+          <p class="card-text in_inventory">
+            Is In Inventory:<br>
+             {{ item.is_In_inventory ? 'Is Available' :'Is Not Available'}}  
+           </p>
+           <p class="card-text">
+            Color:
+            {{ item.color}}
+          </p>
+          <button class="btn btn-lg btn-primary">Acquista</button>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+
+<div class="row" *ngFor="let item of product; let i= index">
+    <div class="col-sm-4 mb-3">
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <img [src]="item.imageUrl" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name  }}</h5>
+            <p class="card-text">Price: {{ item.price }} $</p>
+            <p class="card-text">Discount: {{ item.discount  }}</p>
+            <p class="card-text">
+              InStock:
+              {{ item.itemLeft}}
+            </p>
+            <p class="card-text in_inventory">
+              Is In Inventory:<br>
+               {{ item.is_In_inventory ? 'Is Available' :'Is Not Available'}}  
+             </p>
+            <p class="card-text">
+                Color:
+                {{ item.color}}
+              </p>
+            <button class="btn btn-lg btn-primary">Acquista</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-sm-4 mb-3">
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <img [src]="item.imageUrl" class="card-img-top"  />
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name }}</h5>
+            <p class="card-text">Price: {{ item.price }} $</p>
+            <p class="card-text">Discount: {{ item.discount }}</p>
+            <p class="card-text">
+              InStock:
+              {{
+               item.itemLeft
+              }}
+            </p>
+            <p class="card-text in_inventory">
+              Is In Inventory:<br>
+               {{ item.is_In_inventory ? 'Is Available' :'Is Not Available'}}  
+             </p>  
+            <p class="card-text">
+                Color:
+                {{ item.color}}
+              </p>
+            <button class="btn btn-lg btn-primary">Acquista</button>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 mb-3">
+      <div class="card" style="width: 18rem">
+        <div class="card-body">
+          <img [src]="item.imageUrl" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">{{ item.name  }}</h5>
+            <p class="card-text">Price: {{ item.price }} $</p>
+            <p class="card-text">Discount: {{ item.discount  }}</p>
+            <p class="card-text">
+              InStock:
+              {{ item.itemLeft}}
+            </p>
+            <p class="card-text">
+              Is In Inventory:<br>
+               {{ item.is_In_inventory ? 'Is Available' :'Is Not Available'}}  
+             </p>  
+            <p class="card-text">
+                Color:
+                {{ item.color}}
+              </p>
+            <button class="btn btn-lg btn-primary">Acquista</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  </div>
