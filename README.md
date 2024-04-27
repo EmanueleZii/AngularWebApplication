@@ -1,33 +1,33 @@
-# AppAng
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.4.
+<h1>Angular Web Application</h1>
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 <br>
-
-
 
 ![web application](https://github.com/EmanueleZii/AngularWebApplication/assets/77202606/0f6b0be9-d020-4830-9b5d-852720fb46c3)
 
+Questo progetto è stato generato con [Angular CLI](https://github.com/angular/angular-cli) versione 17.3.4.
+
+## Server di sviluppo
+
+Esegui `ng serve` per avviare un server di sviluppo. Naviga su `http://localhost:4200/`. L'applicazione si ricaricherà automaticamente se modifichi uno dei file sorgente.
+
+## Scaffolding del codice
+
+Esegui `ng generate component nome-componente` per generare un nuovo componente. Puoi anche utilizzare `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Compilazione
+
+Esegui `ng build` per compilare il progetto. Gli artefatti della compilazione saranno memorizzati nella directory `dist/`.
+
+## Esecuzione dei test unitari
+
+Esegui `ng test` per eseguire i test unitari tramite [Karma](https://karma-runner.github.io).
+
+## Esecuzione dei test end-to-end
+
+Esegui `ng e2e` per eseguire i test end-to-end tramite una piattaforma a tua scelta. Per utilizzare questo comando, è necessario prima aggiungere un pacchetto che implementi le capacità di testing end-to-end.
+
+## Aiuto ulteriore
+
+Per ottenere ulteriore assistenza sull'Angular CLI, utilizza `ng help` o consulta la pagina [Panoramica e riferimento dei comandi di Angular CLI](https://angular.io/cli).
+<br>
