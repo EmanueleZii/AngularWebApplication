@@ -1,9 +1,8 @@
 
 <br>
-<app-search></app-search>
+<app-search (searchTextChange)="OnSetSearchText($event)"></app-search>
 <br>
-<br>
-
+<productlist [searcText]="searchText"></productlist>
 
 
 <!---

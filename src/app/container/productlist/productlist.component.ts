@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SingleproductsComponent } from './singleproducts/singleproducts.component';
 import { FilterComponent } from './filter/filter.component';
@@ -84,6 +84,9 @@ export class ProductlistComponent
  totalProductInStock:number = this.products.filter( p=> p.is_In_inventory === true).length;
  totalProductOutStock:number = this.products.filter( p=> p.is_In_inventory === false ).length;
  
+ @Input()
+ searcText:string ='';
+
   selectFilterRadioButton:string ='all';
 
  OnFilterChange(value:string)

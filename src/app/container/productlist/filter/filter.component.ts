@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './filter.component.html',
   styleUrl: './filter.component.css',
 })
+
 export class FilterComponent {
   @Input()
   all: number = 0;
