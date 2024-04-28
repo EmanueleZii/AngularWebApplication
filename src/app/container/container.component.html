@@ -1,6 +1,10 @@
 <br />
-<app-search (searchTextChange)="OnSetSearchText($event)"></app-search>
+<app-search (searchTextChange)="OnSetSearchText($event)"> </app-search>
 <br />
-<productlist [searcText]="searchText" #productListComponent></productlist>
+<productlist [searcText]="searchText" #productListComponent> </productlist>
 <br />
-<product-detail *ngIf="productListComponent.selectProduct"></product-detail>
+<product-detail
+  *ngIf="productListComponent.selectProduct"
+  [productListComp]="productListComponent"
+>
+</product-detail>

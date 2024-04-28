@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component } from '@angular/core';
+import { ChangeDetectorRef, Component, ViewChild } from '@angular/core';
 import { FooterComponent } from '../footer/footer.component';
 import { SearchComponent } from './search/search.component';
 import { CommonModule } from '@angular/common';
@@ -23,7 +23,7 @@ export class ContainerComponent {
 
   searchText: string = '';
 
-  constructor() {}
+  @ViewChild(ProductlistComponent) productListComponent:ProductlistComponent;
 
   OnSetSearchText(value: string) {
     this.searchText = value;
