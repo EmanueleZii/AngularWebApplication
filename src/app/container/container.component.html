@@ -1,12 +1,6 @@
-
-<br>
+<br />
 <app-search (searchTextChange)="OnSetSearchText($event)"></app-search>
-<br>
-<productlist [searcText]="searchText"></productlist>
-
-
-<!---
-<div *ngFor="let item of listOfString" name="item">
- <p> Current element array is : {{item}}</p>
-</div>
--->
+<br />
+<productlist [searcText]="searchText" #productListComponent></productlist>
+<br />
+<product-detail *ngIf="productListComponent.selectProduct"></product-detail>

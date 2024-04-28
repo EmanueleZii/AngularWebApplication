@@ -9,12 +9,14 @@ import { ProductlistComponent } from './container/productlist/productlist.compon
 import { CommonModule } from '@angular/common';
 import { FilterComponent } from './container/productlist/filter/filter.component';
 import { FormsModule } from '@angular/forms';
+import { ProductDetailComponent } from './container/product-detail/product-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MainmenuComponent,
+   
   ],
   imports: [
     BrowserModule,
@@ -25,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     ProductComponent,
     ProductlistComponent,
     FilterComponent,
-    FormsModule
+    FormsModule, 
+    ProductDetailComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

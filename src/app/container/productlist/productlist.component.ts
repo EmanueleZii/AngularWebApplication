@@ -2,9 +2,11 @@ import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SingleproductsComponent } from './singleproducts/singleproducts.component';
 import { FilterComponent } from './filter/filter.component';
+import { Product } from '../../Models/Product';
+
 
 // Define the Product interface
-interface Product {
+/*interface Product {
   id: number;
   name: string;
   category: string;
@@ -17,7 +19,7 @@ interface Product {
   itemLeft: number;
   is_In_inventory: boolean;
   slug: string;
-}
+}*/
 
 @Component({
   selector: 'productlist',
@@ -32,6 +34,8 @@ export class ProductlistComponent
   //variabili
   sconto:number =  0;
   prezzoscontato: number = parseInt((499.99 / this.sconto * 100).toFixed(0), 10);
+  
+  selectProduct:Product;
 
   // array prodotti
   products: Product[] = [
@@ -87,7 +91,7 @@ export class ProductlistComponent
  @Input()
  searcText:string ='';
 
-  selectFilterRadioButton:string ='all';
+ selectFilterRadioButton:string ='all';
 
  OnFilterChange(value:string)
  {

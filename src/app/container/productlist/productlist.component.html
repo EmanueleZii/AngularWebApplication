@@ -10,7 +10,7 @@
     Sconti Black Friday {{ prod.discount + "%" }} sui {{ prod.name }}!
   </div>
 </div>
-<div *ngFor="let prod of products">
+<div *ngFor="let prod of products" (click)="selectProduct = prod">
 <app-singleproducts
   [product]="prod" *ngIf=" searcText=== '' || prod.name.toLocaleLowerCase().includes(searcText)"
  ></app-singleproducts>

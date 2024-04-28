@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { Product } from '../../../Models/Product';
+
 
 @Component({
   selector: 'app-singleproducts',
@@ -12,21 +14,6 @@ import { Component, Input } from '@angular/core';
 
 export class SingleproductsComponent {
   @Input()
-  product :{ id: number,
-    name: string,
-    category: string,
-    brand: string,
-    description: string,
-    price: number,
-    discount?: number,
-    imageUrl: string,
-    color: string[],
-    itemLeft: number,
-    is_In_inventory: boolean,
-    slug: string
-  }; 
+  product :Product
  
-  constructor(){
-
-   }
 }
